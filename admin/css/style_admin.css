@@ -1,0 +1,194 @@
+@import url(view.css);
+
+* {
+  font-size: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  /* border: 1px solid #000; */
+}
+
+title {
+  display: none;
+}
+
+.outer {
+  width: 100%;
+  background-color: rgb(60, 164, 255);
+}
+
+/*===== This block of code work on header of admin panel =====*/
+header {
+  height: 100px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.logo {
+  height: 100%;
+  width: 120px;
+  background-size: cover;
+  border-radius: 70px;
+  float: left;
+}
+
+.title {
+  color: #EEEEEE;
+  width: 80%;
+  margin: 10px;
+  float: right;
+}
+
+.title1 {
+  width: 50px;
+  padding: 10px;
+  float: left;
+  font-size: 50px;
+  color: violet;
+  animation: ping 2.5s linear infinite both;
+}
+
+.title2 {
+  width: 50px;
+  padding: 10px;
+  float: left;
+  font-size: 50px;
+  color: #5e8c6a;
+  animation: ping 1.5s linear infinite both;
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+
+h1 {
+  font-size: 35px;
+  padding: 25px 50px;
+  text-align: center;
+}
+
+/* This is background code */
+.main {
+  height: 84.5vh;
+  width: 100%;
+
+  --s: 80px;
+  --c: #5e8c6a;
+
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, #bfb35a 68% 70%, #0000 72%;
+  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+}
+
+/* This block of code work for main's left menu */
+.mleft {
+  height: 100%;
+  width: 250px;
+  float: left;
+  border-right: 1px dashed #000;
+  overflow: auto;
+}
+
+.menus {
+  background-color: rgb(153, 83, 43);
+  height: 30px;
+  padding: 5px 25px;
+  margin: 4px;
+}
+
+.menubar a {
+  text-decoration: none;
+}
+
+/* This block of code style main's right side of admin panel  */
+.mright {
+  display: inline;
+}
+
+.heading {
+  background: rgba(51, 100, 29, 0.349);
+  backdrop-filter: blur(3px);
+  height: 50vh;
+  width: 50%;
+  margin: 0px auto;
+  border-radius: 30px;
+  overflow-y: scroll;
+}
+
+.row {
+  height: 100px;
+  width: 90%;
+  margin: 25px 5vh;
+  padding-left: 5vh;
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+}
+
+.rleft {
+  height: 100%;
+  width: 40%;
+  float: left;
+  padding: 40px 40px;
+  border-right: 1px dashed #000;
+}
+
+.r_right {
+  padding: 10px 30px;
+  height: 100%;
+  width: 60%;
+  float: left;
+}
+
+.r_right ::placeholder {
+  color: aliceblue;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.button {
+  height: 50px;
+  background-color: rgb(53, 179, 53);
+  width: 50%;
+  border-radius: 5px;
+  float: left;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}

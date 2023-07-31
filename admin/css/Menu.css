@@ -1,0 +1,51 @@
+header {
+  height: 100px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.logo {
+  height: 100%;
+  width: 120px;
+  background-size: cover;
+  border-radius: 50px;
+  float: left;
+}
+
+.title {
+  color: #EEEEEE;
+  width: 50%;
+  font-size: 30px;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  float: right;
+}
+
+.title1 {
+  color: #EEEEEE;
+  animation: ping 2.5s linear infinite both;
+}
+
+.title2 {
+  animation: ping 1.5s linear infinite both;
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}

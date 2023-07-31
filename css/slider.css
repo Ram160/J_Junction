@@ -1,0 +1,44 @@
+.slider {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+    background-size: 50% 50%;
+    background-image: url(' ../images/svg/D000.svg');
+    background-position: right -160px  top 300px;
+    background-repeat: no-repeat;
+}
+ h1{
+    font-size: 45px;
+    width: 100%;
+}
+.slider .slide {
+    grid-column: span 2;
+    margin-top: 40px;
+    height: 35vh;
+    max-width: 35vh;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: all 1s;
+    float: left;
+}
+
+.slider img {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    transition: 400ms ease 100ms;   
+}
+
+.slider .slide:nth-child(7n+1) {
+    grid-column: 2/span 2;
+}
+
+.slider .slide:hover {
+    z-index: 2;
+    transform: scale(1.3);
+}

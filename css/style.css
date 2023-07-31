@@ -1,0 +1,135 @@
+/*========= HEADER =======*/
+@import url(Menu.css);
+/* ======== SLIDER ======== */
+@import url(slider.css);
+/* ======== ADVENTURE ======== */
+@import url(adv_slider.css);
+/* ======== HOTEL ======== */
+@import url(hotel.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #00ADB5;
+  scroll-behavior: smooth;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #222831;
+}
+
+div {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.city {
+  font-size: 150px;
+  height: 180px
+}
+
+/* ======== CITY ======== */
+#home {
+  display: inline-block;
+  padding-top: 150px;
+}
+
+#food {
+  background-image: url('../images/svg/F000.svg');
+  background-size: 50% 50%;
+  background-position: right -200px top 300px;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  font-size: 5px;
+}
+
+.card .card-back p {
+  font-size: 15px;
+}
+
+#reach {
+  background-image: url('../images/svg/T000.svg');
+  margin-top: 150px;
+  background-size: 50% 50%;
+  background-position: right -200px top 300px;
+  background-repeat: no-repeat;
+}
+
+#reach div {
+  height: 40%;
+  width: 25%;
+  float: left;
+  opacity: 0.9;
+}
+
+#reach img {
+  height: 80%;
+  width: 90%;
+}
+
+#reach p {
+  width: 100px;
+}
+
+.transport {
+  border-radius: 25px;
+  color: #EEEEEE;
+  background-color: #393E46;
+  margin: 25px 50px;
+  text-align: center;
+}
+
+#contact {
+  height: 70vh;
+}
+
+.fleft {
+  height: 40%;
+  width: 50%;
+  float: left;
+  background-image: url('../images/svg/C000.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.fleft p {
+  color: #61C0BF;
+  padding-left: 35px;
+}
+
+.fright {
+  height: 50%;
+  width: 50%;
+  float: right;
+  padding-left: 50px;
+  background-image: url('../images/svg/C001.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.form {
+  float: left;
+  margin-left: 25px;
+}
+
+.fright input {
+  height: 45px;
+  margin: 5px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.fbottom {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
